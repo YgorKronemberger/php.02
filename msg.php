@@ -7,10 +7,26 @@
 </head>
 <body>
     <?php include 'header.php'; ?>
+    
     <div class="container">
-      <?php
-        echo "";
-      ?><br><br>
+      
+       <?php
+        
+            
+        $msg = $_GET["variavel"];
+        
+        if($msg = "Gravado com sucesso")
+        {        
+            echo "<div class='alert alert-success' role='alert'>" . $msg . "</div>" ;
+        
+        }else{
+            echo "<div class='alert alert-danger'>" . $msg . "</div>" ;
+        }
+        
+      ?>
+       
+       <br><br>
+       
         <a href="index.php">Voltar</a>
     </div>
 </body>
